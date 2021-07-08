@@ -33,9 +33,21 @@ addOne(1) //=> 2
 addOne(-5) //=> -4
 -----------------------------------------------------------------*/
 // Your solution for 01-addOne here:
+ 
+// function addOne(userNumber){
+//   return userNumber += 1
+// }
 
-
-
+// How do I make sure a number is put in the input?
+// Specify that input field on site is only for numbers.
+function addOne(userNumber){
+  if (userNumber == NaN) {
+    return "Input must be a number."
+  }
+  else {
+    return userNumber += 1
+  }
+}
 
 
 /*-----------------------------------------------------------------
@@ -57,7 +69,14 @@ addTwoNumbers('Hello', 5) //=> NaN
 -----------------------------------------------------------------*/
 // Your solution for 02-addTwoNumbers here:
 
-
+function addTwoNumbers(firstUserNumber, secondUserNumber){
+  if (typeof firstUserNumber === 'number' && typeof secondUserNumber === 'number') {
+    return firstUserNumber + secondUserNumber
+  }
+  else {
+    return NaN
+  }
+}
 
 
 
@@ -80,8 +99,11 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 
+const numbers = []
 
-
+function sumNumbers() {
+  return
+}
 
 
 /*-----------------------------------------------------------------
